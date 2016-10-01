@@ -1,12 +1,12 @@
 from conans import ConanFile, CMake
 import os
 
-channel = os.getenv("CONAN_CHANNEL", "testing")
+channel = os.getenv("CONAN_CHANNEL", "stable")
 username = os.getenv("CONAN_USERNAME", "coding3d")
 
 class TestGlew(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
-    requires = "glew/2.0.0@%s/%s" % (username, channel)
+    requires = "glew/1.13.0@%s/%s" % (username, channel)
     generators = "cmake"
 
     def build(self):

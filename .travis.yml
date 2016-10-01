@@ -6,9 +6,9 @@ language: python
 env:
   global:
     - CONAN_UPLOAD=1
-    - CONAN_REFERENCE="glew/2.0.0"
+    - CONAN_REFERENCE="glew/1.13.0"
     - CONAN_USERNAME="coding3d"
-    - CONAN_CHANNEL="testing"
+    - CONAN_CHANNEL="stable"
     - CONAN_TOTAL_PAGES=1
     - CONAN_CURRENT_PAGE=1
 
